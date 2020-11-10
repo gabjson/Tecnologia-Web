@@ -1,0 +1,50 @@
+<!--
+    FORM2 - Formulário de Contato
+
+        Construa um formulário de contato que tenha os seguintes campos:
+        -- E-mail: deve ser obrigatório e deve validar e-mails corretamente. Use o nome de campo 'email'.
+        -- Assunto: deve ser uma caixa de seleção obrigatória com uma opção vazia e outras três opções: Problemas, Reclamação e Sugestão. Use o nome de campo 'assunto'.
+        -- Mensagem: deve ser uma caixa de texto de múltiplas linhas obrigatória. Use o nome de campo 'mensagem'.
+        -- Tipo de Resposta: deve ser uma lista de opções de múltipla escolha visíveis, não obrigatória, com as opções: Telefone (valor T), E-mail (valor E) ou Correio (valor C).
+        Use o nome de campo 'tipo-resposta'.
+        -- Botão de Submissão: deve possuir o texto Enviar.
+-->
+
+
+<body>
+  <form id="form2" method="POST">
+
+    <div>
+      <label for="campo-email">E-mail:</label>
+       <input id="campo-email" type="email" name="email" placeholder="Digite seu email" required/>
+    </div>
+
+      <div>
+           <label for="assunto">Assunto:</label>
+             <select name="assunto" type="textarea" id="assunto" required>
+                 <option value="V"></option>
+                 <option value="B">Problemas</option>
+                 <option value="R">Reclamação</option>
+                 <option value="S">Sugestão</option>
+             </select>
+       </div>
+
+       <div>
+             <label for="campo-mensagem">Mensagem</label>
+               <textarea name="mensagem" id="campo-mensagem" maxlength="100" placeholder="Digite sua mensagem " required></textarea>
+       </div>
+
+         <fieldset>
+            <input type="checkbox" name="tipo-resposta" id="campo-conheceu-telefone" value="T"/>
+            <label for="campo-conheceu-telefone">Telefone</label>
+            <input type="checkbox" name="tipo-resposta" id="campo-conheceu-email" value="E"/>   
+            <label for="campo-conheceu-email">E-mail</label>
+            <input type="checkbox" name="tipo-resposta" id="campo-conheceu-correio" value="C"/>
+            <label for="campo-conheceu-correio">Correio</label>
+         </fieldset>
+       <div>
+          <button>Enviar</button>
+       </div>
+      
+  </form>
+</body>

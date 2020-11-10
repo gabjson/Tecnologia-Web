@@ -1,0 +1,42 @@
+<!--
+    FORM4 - Formulário de Endereço
+
+    Construa um formulário de endereço que tenha os seguintes campos:
+     -- Rua: deve ser obrigatório, deve conter no máximo 100 caracteres. Use o nome de campo 'rua'.
+     -- Número: deve ser obrigatório e deve conter apenas números válidos. Use o nome de campo 'numero'.
+     -- Estado: deve ser uma caixa de seleção obrigatória com a opção vazia e as opções: São Paulo (Valor SP), Rio de Janeiro (RJ) e Minas Gerais (MG). Use o nome de campo 'estado'
+     -- Botão de Submissão: deve possuir o texto Salvar.
+     -- Botão de Limpeza: deve possuir o texto Limpar.
+ -->
+
+ <body>
+
+  <form id="form4" method="POST">
+    <div>
+      <label for="rua">Rua</label required>
+      <input id="rua" type="text" name="rua" required maxlength="100"/>
+    </div>
+    <div>
+      <label for="numero">Numero</label required>
+      <input id="rua" type="number" name="numero" required/>
+    </div>
+    <div>
+      <label for="estado">Estado</label required>
+        <select name="estado" type="textarea" id="estado" required>
+            <option value=""></option>
+            <option value="SP">São Paulo</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="MG">Minas Gerais</option>
+        </select>
+    </div>
+  
+    <div>
+      <button>Salvar</button>
+    </div>
+
+    <div>
+      <button type="reset">Limpar</button>
+    </div>
+  </form>
+  </form>
+</body>
