@@ -1,2 +1,5 @@
 # Tecnologia-Web
-Este repositório contem  os exercícios realizados nas aulas de tecnologia para web do segundo semestre. Linguagens : Javascript / CSS / HTML 
+# Javascript
+# Linguagem de programação
+
+Este repositorio conté os exercios realizados em aula do segundo semestre, Possuindo as seguintes linguagens : Javascript, css, python.
